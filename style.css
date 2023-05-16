@@ -1,0 +1,134 @@
+/*--------------------------------------------------------------
+# Generic
+--------------------------------------------------------------*/
+*{box-sizing: border-box;}
+html {font-size: 62.5%; line-height: 1.15; box-sizing: border-box;}
+
+body {/*font-size: 2rem;*/margin: 0;/*	color : #707070;*/background: #eeecec;height: 100vh;}
+header {background: #f8f8f8;}
+h1, h2, h3, h4, h5, h6 {clear: both; margin: 0;}
+h1{font-size: 3em; justify-content:center;}
+h2{font-size: 2em; padding-bottom: 2em;}
+h3 {font-size: 2em;margin-bottom: 1em; font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif; ; padding-left: 2px;}
+hr{background-color: #ccc;border: 0;height: 1px;margin-bottom: 1.5em;}
+
+a{background-color: transparent;text-decoration: none;}
+a:focus {outline: thin dotted;}
+a:hover, a:active {outline: 0;}
+ul, ol{margin: 0 0;list-style: none;padding-left: 0;}
+li{margin-bottom: 5px;}
+img{height: auto;/* Make sure images are scaled correctly. */max-width: 100%;/* Adhere to container width. */display: block;border-style: none;height: auto;}
+article {padding: 2em 0;}
+figure{overflow: hidden;margin: 0 10px;}
+p{font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;}
+
+table{width: 600px; margin: auto; border-collapse: collapse;}
+/*table td{border: 1px solid black; padding: 5px;}*/
+table th{background: rgb(180, 180, 180);}
+
+/*--------------------------------------------------------------
+# Navigation
+--------------------------------------------------------------*/
+nav ul{/*border : 1px solid magenta;*/list-style: none;padding: 0;display: flex;justify-content: right;}
+nav li{/*border: 2px solid yellow;*/margin: 0 1em;}
+nav a{/*border: 3px solid green;*/text-decoration: none;color: white;font-weight: 700;padding: .25em 0;}
+nav a:hover {color: #fff;}
+
+/*--------------------------------------------------------------
+# Header
+--------------------------------------------------------------*/
+/* Main Nav */
+.mainnav{display: flex; justify-content: space-between; background-image: url('immagini/background_image.jpg') ;font-size: 1.5em;}
+.mainnav:hover {background-color: #ddd;color: black;}
+.mainnav a.active {background-color: #0407aa;color: rgb(23, 11, 158);}
+.mainnav__logo {width: 150px; height: 100%;}
+
+/* First Nav */
+
+.firstnav input {border-radius: 2em;}
+
+.firstnav{overflow: hidden;display: flex;justify-content: center;background-color: rgb(12, 12, 91);font-size: 1.5em;}
+.firstnav a {color: #f2f2f2;padding: 2em 2em;text-decoration: none;}
+.firstnav a:hover {background-color: #ddd;color: black;}
+.firstnav a.active {background-color: #04AA6D;color: white;
+}
+/*--------------------------------------------------------------
+# Main body
+--------------------------------------------------------------*/
+
+.container {width: 100%;max-width: 1300px;margin: 0 auto; padding-top: 2em;/*border : 1px solid magenta;*/justify-content: center;/*padding-top: 2em;*/;}
+.container__cols1 {display: inline-block;margin: 0.5em;justify-content: space-between;font-size: 1.5em;}
+.container__cols2 {display: flex;margin: 0.5em;justify-content: space-between;font-size: 1em;}
+.container__cols__col1{width: 33%;/*border: 3px solid green;*/font-size: 1.5em;height: auto;cursor: pointer;}
+.container__activities__cols__1{margin-left: 70px; margin-right: 70px; margin-top: 150px; padding: 0; font-size: 40px; border-left: solid black;}
+.container__cols__col1 #zoom-In img{transition: 0.2s;}
+.container__cols__col1 #zoom-In:hover img{transform: scale(1.5);size: 5px 5px 5px;}
+.container__cols__col1--card {width: 100%;height: 500px;object-fit: cover;box-shadow: 5px 5px 20px black;overflow: hidden;}
+.container__cols__col1--img{height : 250px;width :100%;border-radius : 3px;}
+.container__cols__col1--img--p{padding: 6px;box-sizing: border-box;position: absolute;background: rgb(27,27,27,.5);font-size: 1.75em;}
+.container__activities__cols {display: flex;margin: 0.5em;justify-content: space-between;font-size: 1em;}
+.container__activities__cols img{padding: auto;height : auto;width : 400em;}
+.container__activities__cols p{padding-left: 2em; font-size: 1.5em;}
+.container table td, th, tr{font-size: medium;}
+.container table{padding: 3em;}
+
+/*--------------------------------------------------------------
+# Footer
+--------------------------------------------------------------*/
+
+footer {background-color: #112f64;border-top: black;font-size: 1.5em;}
+footer a {color: white;text-decoration: none;}
+footer a:hover {font-size: 1.05em;}
+footer h3 {color: rgba(255, 68, 0, 0.911);}
+.footer__row {display: flex;flex-wrap: wrap;justify-content: space-between;color: white;}
+.footer__col {width: 30%;margin-bottom: 20px;}
+.footer__low {width: 100%;padding-bottom: 1em;background-color: #112f64;/*border: 1px solid magenta;*/display: flex;justify-content: center;align-content: center;}
+.footer__row__sociallist li {display: inline-block;margin-right: 2px;margin-left: 2px;}
+
+/*------------------------------------------------------------
+# robe php
+------------------------------------------------------------*/
+
+	/*-----------------------------------------------------------
+	sezione login 
+	------------------------------------------------------------*/
+	.travelfy_login{padding-top: 10px; padding-left: 50px; padding-bottom: 15px; font-size: 30px; text-align: center; color: white;}
+	.titolologin{background: rgb(26, 129, 197); }
+	.etabella{border-radius: 20px; border: 1px solid black; width: 600px; margin: auto;}
+	.tabella{outline: none;}
+	.tabella tr{height: 20px;}
+	.tabellalogin{padding: 6px;}
+	.tabella td{padding: 20px; padding-bottom: 7px; font-size: 22px;}
+	.virginia{border-bottom: solid 1px black;}
+	.pagina_login{font-size: 30px; padding-bottom: 0px; padding-top: 10px;}
+	.colore{background: white;}
+	.accedi{text-align: center;}
+	.accedi p{font-size: 15px;}
+	.input{border: none; outline: none; background: transparent; padding-top:5px; padding-bottom: 2px; width: 100%;}
+	.distaso{text-align: center;}
+	body{position: relative;}
+	.piedatore{text-align: center; background:rgb(26, 129, 197); margin-bottom: 0px; padding: 5px; position: fixed; bottom: 0px; width: 100%; color: white;}
+	/*-----------------------------------------------------------
+	sezione form
+	------------------------------------------------------------*/
+
+
+
+
+
+
+/*--------------------------------------------------------------
+# Media
+--------------------------------------------------------------*/
+
+@media (max-width:550px){
+	.mainnav {flex-direction: column;}
+	.firstnav {flex-direction: column;flex-wrap: wrap;}
+	header {text-align: center;}
+	.nav ul {flex-direction: column;}
+	.nav li {margin: 1em 0;}
+	.container__cols2{width:100%;}
+	.container{flex-wrap: wrap;}
+	img{display:block;}
+	.container__activities__cols{flex-wrap: wrap; flex-direction: column;}
+}
