@@ -1,11 +1,5 @@
 <?php
 	session_start();
-	//echo session_id();
-
-	// $db_servername = "localhost";
-	// $db_name = "biblioteca";
-	// $db_username = "root";
-	// $db_password = "";
 	require("../data/dati_connessione_db.php");
 	if (isset($_POST["username"])) {$username = $_POST["username"];} else {$username = "";}
 	if (isset($_POST["password"])) {$password = $_POST["password"];} else {$password = "";}
@@ -13,8 +7,6 @@
 
 	
 ?>
-
-
 <!DOCTYPE html>
 <html>
 
@@ -74,7 +66,7 @@
                 <tr>
                     <td text-align="center" class="distaso">
 
-                        	Utente <input type="radio" name="tipologia" value="utenti" checked>
+                        	Utente <input type="radio" name="tipologia" value="utente" checked>
                         	Addetto <input type="radio" name="tipologia" value="Addetto">
 
                     </td>
@@ -99,10 +91,10 @@
 							WHERE username='$username'
 								AND password='$password'";
 
-				$ris = $conn->query($myquery) or die("<p>Query fallita! ".$conn->error."</p>");
+				$ris = $conn->query($myquery) or die("<p>Query non riuscita! ".$conn->error."</p>");
 
 				if($ris->num_rows == 0){
-					echo "<p>Utente non trovato o password errata</p>";
+					echo "<p>Utente o password errati</p>";
 					$conn->close();
 				} 
 				else {
@@ -112,7 +104,7 @@
 					$_SESSION["tipologia"] = $tipologia ;
 											
 					$conn->close();
-					header("location: pagine/home.php");
+					header("location: home.php");
 
 			}
 			}

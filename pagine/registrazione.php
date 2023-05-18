@@ -42,10 +42,10 @@
         <div class="firstnav">
             <nav>
                 <ul>
-                    <li><a href="pagine/alloggi.html" class="current-page">Accomodations</a></li>
-                    <li><a href="pagine/mete.html">Destinations</a></li>
-                    <li><a href="pagine/ristoranti.html">Restaurants</a></li>
-                    <li><a href="pagine/attivita.html">Activities</a></li>
+                    <li><a href="alloggi.php" class="current-page">Accomodations</a></li>
+                    <li><a href="mete.php">Destinations</a></li>
+                    <li><a href="ristoranti.php">Restaurants</a></li>
+                    <li><a href="attivita.php">Activities</a></li>
                 </ul>
             </nav>
         </div>
