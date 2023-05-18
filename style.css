@@ -107,6 +107,7 @@ footer h3 {color: rgba(255, 68, 0, 0.911);}
 	.distaso{text-align: center;}
 	body{position: relative;}
 	.piedatore{text-align: center; background:rgb(26, 129, 197); margin-bottom: 0px; padding: 5px; position: fixed; bottom: 0px; width: 100%; color: white;}
+	.err div{font-size: 200px;}
 	/*-----------------------------------------------------------
 	sezione form
 	------------------------------------------------------------*/

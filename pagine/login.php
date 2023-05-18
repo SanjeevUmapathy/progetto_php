@@ -94,7 +94,7 @@
 				$ris = $conn->query($myquery) or die("<p>Query non riuscita! ".$conn->error."</p>");
 
 				if($ris->num_rows == 0){
-					echo "<p>Utente o password errati</p>";
+					echo "<div style='color:red; font-size: 2em;' align='center'>Utente o password errati</div>";
 					$conn->close();
 				} 
 				else {
