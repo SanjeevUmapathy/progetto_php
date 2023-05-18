@@ -3,7 +3,7 @@
 	if(!isset($_SESSION['username'])){
 		header('location: ../homedex.php');
 	}
-	if($_SESSION["tipologia"]=="utente"){
+	if($_SESSION["tipologia"]=="cliente"){
 		header('location: pagina_cliente.php');
 	}
 	if($_SESSION["tipologia"]=="addetto"){
@@ -12,5 +12,5 @@
 ?>
 
 <html>
-	<p>cazzo ci fai qui?</p>
+	<p>ciao</p>
 </html>
