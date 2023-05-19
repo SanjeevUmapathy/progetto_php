@@ -66,8 +66,13 @@
                 <tr>
                     <td text-align="center" class="distaso">
 
+<<<<<<< HEAD
                         	Utente <input type="radio" name="tipologia" value="utente" checked>
                         	Addetto <input type="radio" name="tipologia" value="Addetto"checked>
+=======
+                        	Utente <input type="radio" name="tipologia" value="cliente" checked>
+                        	Addetto <input type="radio" name="tipologia" value="Addetto">
+>>>>>>> ef6346ee269408511b438026226ca01cb45fe670
 
                     </td>
                 </tr>
@@ -94,7 +99,7 @@
 				$ris = $conn->query($myquery) or die("<p>Query non riuscita! ".$conn->error."</p>");
 
 				if($ris->num_rows == 0){
-					echo "<p>Utente o password errati</p>";
+					echo "<div style='color:red; font-size: 2em;' align='center'>Utente o password errati</div>";
 					$conn->close();
 				} 
 				else {

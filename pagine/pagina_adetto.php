@@ -11,6 +11,6 @@
 </head>
 <body>
     <main>
-        <p>FAI CAGARE adetto</p>
+        <p></p>
     </main>
 </body>

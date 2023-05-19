@@ -34,10 +34,6 @@
         </div>
     </header>
     <main>
-        <div class="riga">
-				<div class="p1">Biglietti</div>
-				<div class="p2">Prenotazioni</div>	
-                <div class="p3">Dati</div>
-		</div>
+        <p>FAI CAGARE cliente</p>
     </main>
 </body>
