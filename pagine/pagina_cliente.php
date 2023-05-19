@@ -10,7 +10,34 @@
 	<link rel="stylesheet" type="text/css" href="../style.css">
 </head>
 <body>
+<header>
+        <div class="mainnav">
+            <div class>
+                <img src="../immagini/logo_bianco.png" alt="travel" class="mainnav__logo" />
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="../homedex.php">Homepage</a></li>
+                    <li><a href="contatti.php">Contacts</a></li>
+                </ul>
+            </nav>
+        </div>
+        <div class="firstnav">
+            <nav>
+                <ul>
+                    <li><a href="alloggi.php" class="current-page">Accomodations</a></li>
+                    <li><a href="mete.php">Destinations</a></li>
+                    <li><a href="ristoranti.php">Restaurants</a></li>
+                    <li><a href="attivita.php">Activities</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
     <main>
-        <p>FAI CAGARE cliente</p>
+        <div class="riga">
+				<div class="p1">Biglietti</div>
+				<div class="p2">Prenotazioni</div>	
+                <div class="p3">Dati</div>
+		</div>
     </main>
 </body>

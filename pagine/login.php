@@ -67,7 +67,7 @@
                     <td text-align="center" class="distaso">
 
                         	Utente <input type="radio" name="tipologia" value="utente" checked>
-                        	Addetto <input type="radio" name="tipologia" value="Addetto">
+                        	Addetto <input type="radio" name="tipologia" value="Addetto"checked>
 
                     </td>
                 </tr>
@@ -105,7 +105,6 @@
 											
 					$conn->close();
 					header("location: home.php");
-
 			}
 			}
 
