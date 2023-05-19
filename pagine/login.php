@@ -52,33 +52,42 @@
 	<br>
 	<br>
 	<br>
-	<div>
-		<form action="<?php $_SERVER['PHP_SELF'] ?>" method="post">
-			<div class="etabella">
-			<table class="tabella">
-				<tr class="titolologin"><h2 align="center" class="pagina_login">Pagina di Login</h2></tr>
-				<tr>
-					<td class="virginia">Username: <input class="input" type="text" name="username" placeholder="inserisci nome utente...."value="<?php echo $username; ?>" required></td>
-				</tr>
-				<tr>
-					<td class="virginia">Password: <input class="input" type="password" name="password" placeholder="inserisci la password...." value="<?php /*echo $password; */?>" required></td>
-				</tr>
-                <tr>
-                    <td text-align="center" class="distaso">
 
-                        	Utente <input type="radio" name="tipologia" value="cliente" checked>
-                        	Addetto <input type="radio" name="tipologia" value="Addetto">
+	<div classe="container-testo">
+	
+		<div>
+			<form action="<?php $_SERVER['PHP_SELF'] ?>" method="post">
+				<div class="etabella">
+				<table class="tabella">
+					<tr class="titolologin"><h2 align="center" class="pagina_login">Pagina di Login</h2></tr>
+					<tr>
+						<td class="virginia">Username: <input class="input" type="text" name="username" placeholder="inserisci nome utente...."value="<?php echo $username; ?>" required></td>
+					</tr>
+					<tr>
+						<td class="virginia">Password: <input class="input" type="password" name="password" placeholder="inserisci la password...." value="<?php /*echo $password; */?>" required></td>
+					</tr>
+					<tr>
+						<td text-align="center" class="distaso">
 
-                    </td>
-                </tr>
-			</table>
-			</div>   
-			<div class="accedi">
-				<p><input type="submit" value="Accedi"></p>
-  			</div>
-			<br>
-			<br>
-		</form>
+								Utente <input type="radio" name="tipologia" value="cliente" checked>
+								Addetto <input type="radio" name="tipologia" value="Addetto" checked>
+						</td>
+					</tr>
+				</table>
+				</div>   
+				<div class="accedi">
+					<p><input type="submit" value="Accedi"></p>
+				</div>
+				<br>
+				<br>
+				</form>
+			</div>
+			<div>
+				<h3>non ti sei registrato?</h3>
+				<p>registrati cliccando su questo tasto:</p>
+			</div>
+	</div>
+
 		<?php
 			if (isset($_POST["username"]) and isset($_POST["password"]) and isset($_POST["tipologia"])) {
 				$conn = new mysqli($db_servername,$db_username,$db_password,$db_name);
@@ -94,7 +103,7 @@
 				$ris = $conn->query($myquery) or die("<p>Query non riuscita! ".$conn->error."</p>");
 
 				if($ris->num_rows == 0){
-					echo "<div style='color:red; font-size: 2em;' align='center'>Utente o password errati</div>";
+					echo "<div style='color:red; font-size:3em' align='center'>Utente o password errati</div>";
 					$conn->close();
 				} 
 				else {
@@ -106,10 +115,11 @@
 					$conn->close();
 					header("location: home.php");
 			}
+
 			}
 
 		?>	
-	</div>
+	
 <footer class="piedatore">
 	<?php 
 		include('footer.php')
