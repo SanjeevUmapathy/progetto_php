@@ -1,6 +1,7 @@
 <?php 
     require("../data/dati_connessione_db.php");
-    if(isset($_POST["username"])) $username = $_POST["username"];  else $username = "";
+    if(isset($_POST["username"])) 
+    $username = $_POST["username"];  else $username = "";
     if(isset($_POST["password"])) $password = $_POST["password"];  else $password = "";
     if(isset($_POST["conferma"])) $conferma = $_POST["conferma"];  else $conferma = "";
     if(isset($_POST["nome"])) $nome = $_POST["nome"];  else $nome = "";
@@ -96,8 +97,9 @@
 
 					</td>
 					</tr>
-				</table>
-			</div>
+			</table>
+		</div>
+
 			<div class="accedi">
             <p>
                 <input type="submit" value="Accedi">
@@ -108,14 +110,25 @@
 
         <p>
             <?php
-            if(isset($_POST["username"]) and isset($_POST["password"])) {
-                if ($_POST["username"] == "" or $_POST["password"] == "") {
-                    echo "username e password non possono essere vuoti!";
-                } elseif ($_POST["password"] != $_POST["conferma"]){
-                    echo "Le password inserite non corrispondono";
-                } else {
+            if(isset($_POST["username"]) and isset($_POST["password"]))
+             {
+                if ($_POST["username"] == "" or $_POST["password"] == "") 
+                {
+                     echo "username e password non possono essere vuoti!";
+                } 
+
+                elseif ($_POST["password"] != $_POST["conferma"])
+                {
+                    echo "Le password inserite non corrispondono
+                    <br>
+                    <br>";
+                } 
+
+                else 
+                {
                     $conn = new mysqli($db_servername,$db_username,$db_password,$db_name);
-                    if($conn->connect_error){
+                    if($conn->connect_error)
+                    {
                         die("<p>Connessione al server non riuscita: ".$conn->connect_error."</p>");
                     }
 

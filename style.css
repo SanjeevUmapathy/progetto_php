@@ -23,8 +23,6 @@ figure{overflow: hidden;margin: 0 10px;}
 p{font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;}
 
 table{width: 600px; margin: auto; border-collapse: collapse;}
-/*table td{border: 1px solid black; padding: 5px;}*/
-table th{background: rgb(180, 180, 180);}
 
 /*--------------------------------------------------------------
 # Navigation
@@ -50,8 +48,7 @@ nav a:hover {color: #fff;}
 .firstnav{overflow: hidden;display: flex;justify-content: center;background-color: rgb(12, 12, 91);font-size: 1.5em;}
 .firstnav a {color: #f2f2f2;padding: 2em 2em;text-decoration: none;}
 .firstnav a:hover {background-color: #ddd;color: black;}
-.firstnav a.active {background-color: #04AA6D;color: white;
-}
+.firstnav a.active {background-color: #04AA6D;color: white;}
 /*--------------------------------------------------------------
 # Main body
 --------------------------------------------------------------*/
@@ -71,6 +68,15 @@ nav a:hover {color: #fff;}
 .container__activities__cols p{padding-left: 2em; font-size: 1.5em;}
 .container table td, th, tr{font-size: medium;}
 .container table{padding: 3em;}
+.container-testo{display: flex; width: 100%;justify-content: space-between;}
+.sidebar{background-color: #f1f1f1;width: 200px;}
+.sidebar div{height: 100%;}
+.sidebar a{font-size: 1.5em;}
+.sidebar a:hover{font-size: 2em;}
+.sidebar ul {list-style-type: none;margin: 0;padding: 0;}
+.sidebar ul li {padding: 10px;}
+.sidebar ul li a {text-decoration: none;color: #000;}
+
 /*--------------------------------------------------------------
 # Footer
 --------------------------------------------------------------*/
@@ -91,23 +97,32 @@ footer h3 {color: rgba(255, 68, 0, 0.911);}
 	/*-----------------------------------------------------------
 	sezione login 
 	------------------------------------------------------------*/
-	.travelfy_login{padding-top: 10px; padding-left: 50px; padding-bottom: 15px; font-size: 30px; text-align: center; color: white;}
-	.titolologin{background: rgb(26, 129, 197); }
-	.etabella{border-radius: 20px; border: 1px solid black; width: 600px; margin: auto;}
-	.tabella{outline: none;}
-	.tabella tr{height: 20px;}
+	.travelfy_login{padding-top: 10px; padding-left: 50px; padding-bottom: 15px; font-size: 30px; color: white; text-align: center; background: rgb(26, 129, 197);}
+	.registrazione{text-align:center; padding: 20px;}
+	.registrazione div{height: 100%; font-size: 20px;}
+	.foto_utente {height: 100px; width: 50px; }
+	.tasto_registrazione a{text-decoration: none;}
+	.etabella{border-radius: 15px; border: 5px solid black; width: 600px; margin: auto;}
+	.tabella{border-radius: 15px;}
 	.tabellalogin{padding: 6px;}
-	.tabella td{padding: 20px; padding-bottom: 7px; font-size: 22px;}
-	.virginia{border-bottom: solid 1px black;}
-	.pagina_login{font-size: 30px; padding-bottom: 0px; padding-top: 10px;}
+
+	.compilazione_login{padding-top: 60px;}
+	.pagina_login{font-size: 25px; padding-top: 10px; text-align:center;}
+
+	.virginia{padding-left: 20px; padding-right: 20px; font-size: 20px;}
+	.virginia input{padding: 15px; border: 2em black; background: transparent; width: 100%;}
+
 	.colore{background: white;}
 	.accedi{text-align: center;}
-	.accedi p{font-size: 15px;}
-	.input{border: none; outline: none; background: transparent; padding-top:5px; padding-bottom: 2px; width: 100%;}
-	.distaso{text-align: center;}
+	.accedi p{font-size: 25px;}
+	.accedi input{border-radius: 20px; border-color: #005eff; color: none;}
+	.distaso{text-align: center; padding: 10px; font-size: 20px; padding-bottom: 30px;}
 	body{position: relative;}
+	.titolo-sidebar{font-size: 20px;}
 	.piedatore{text-align: center; background:rgb(26, 129, 197); margin-bottom: 0px; padding: 5px; position: fixed; bottom: 0px; width: 100%; color: white;}
-	.err div{font-size: 200px;}
+
+	
+
 	/*-----------------------------------------------------------
 	sezione form
 	------------------------------------------------------------*/

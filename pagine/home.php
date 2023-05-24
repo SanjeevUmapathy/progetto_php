@@ -6,8 +6,9 @@
 	if($_SESSION["tipologia"]=="cliente"){
 		header('location: pagina_cliente.php');
 	}
+
 	if($_SESSION["tipologia"]=="addetto"){
-		header('location: pagina_adetto.php');
+		header('location: pagina_addetto.php');
 	}
 ?>
 
