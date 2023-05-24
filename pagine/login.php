@@ -38,7 +38,6 @@
     	<h1 class="travelfy_login">Travelfy Online - Login</h1>
     </div>
 
-
 	<div class="container-testo">
 
 		<div class="registrazione">
