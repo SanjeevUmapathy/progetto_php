@@ -67,28 +67,28 @@
 						<td class="virginia">Username: <input class="input" type="text" name="username" placeholder="inserisci nome utente...."value="<?php echo $username; ?>" required></td>
 					</tr>
 					<tr>
-						<td class="virginia">Password: <input class="input" type="password" name="password" placeholder="inserisci la password...." value="<?php /*echo $password; */?>" required></td>
+						<td class="virginia">Password: <input class="input" type="password" name="password" placeholder="inserisci la password...." value="<?php echo $password; ?>" required></td>
 					</tr>
 					<tr>
-						<td class="virginia">Conferma pwd: <input class="input" type="password" name="password" placeholder="Conferma password...." value="<?php /*echo $password; */?>" required></td>
+						<td class="virginia">Conferma pwd: <input class="input" type="password" name="password" placeholder="Conferma password...." value="<?php echo $conferma; ?>" required></td>
 					</tr>
 					<tr>
-						<td class="virginia">Nome: <input class="input" type="text" name="password" placeholder="inserisci il nome...." value="<?php /*echo $password; */?>" required></td>
+						<td class="virginia">Nome: <input class="input" type="text" name="password" placeholder="inserisci il nome...." value="<?php echo $nome; ?>" ></td>
 					</tr>
 					<tr>
-						<td class="virginia">Cognome: <input class="input" type="text" name="password" placeholder="inserisci il cognome...." value="<?php /*echo $password; */?>" required></td>
+						<td class="virginia">Cognome: <input class="input" type="text" name="password" placeholder="inserisci il cognome...." value="<?php echo $cognome; ?>" ></td>
 					</tr>
 					<tr>
-						<td class="virginia">Email: <input class="input" type="text" name="password" placeholder="inserisci l'email...." value="<?php /*echo $password; */?>" required></td>
+						<td class="virginia">Email: <input class="input" type="text" name="password" placeholder="inserisci l'email...." value="<?php echo $email; ?>" ></td>
 					</tr>
 					<tr>
-						<td class="virginia">Contatto telephonico: <input class="input" type="text" name="password" placeholder="inserici il numero di telefono...." value="<?php /*echo $password; */?>" required></td>
+						<td class="virginia">Contatto telephonico: <input class="input" type="text" name="password" placeholder="inserici il numero di telefono...." value="<?php echo $telefono; ?>" ></td>
 					</tr>
 					<tr>
-						<td class="virginia">Comune di residenza: <input class="input" type="text" name="password" placeholder="inserisci il comune...." value="<?php /*echo $password; */?>" required></td>
+						<td class="virginia">Comune di residenza: <input class="input" type="text" name="password" placeholder="inserisci il comune...." value="<?php echo $comune; ?>" ></td>
 					</tr>
 					<tr>
-						<td class="virginia">Indirizzo: <input class="input" type="text" name="password" placeholder="inserisci l'indirizzo di residenza...." value="<?php /*echo $password; */?>" required></td>
+						<td class="virginia">Indirizzo: <input class="input" type="text" name="text" placeholder="inserisci l'indirizzo di residenza...." value="<?php echo $indirizzo; ?>" ></td>
 					</tr>
 					<tr>
 						<td text-align="center" class="distaso">
@@ -145,14 +145,6 @@
                         $myquery = "INSERT INTO $tipologia (username, password, nome, cognome, email, telefono, comune, indirizzo)
                                     VALUES ('$username', '$password', '$nome', '$cognome','$email','$telefono','$comune','$indirizzo')";
 
-                        /*
-                        // Versione con l'uso dell'hash
-                        $password_hash = password_hash($password, PASSWORD_DEFAULT);
-
-                        $myquery = "INSERT INTO utenti (username, password, nome, cognome, email, telefono, comune, indirizzo)
-                                    VALUES ('$username', '$password_hash', '$nome', '$cognome','$email','$telefono','$comune','$indirizzo')";
-                        */
-
                         if ($conn->query($myquery) === true) {
                             session_start();
                             $_SESSION["username"]=$username;
@@ -160,8 +152,8 @@
                             
 						    $conn->close();
 
-                            echo "Registrazione effettuata con successo!<br>sarai ridirezionato alla home tra 5 secondi.";
-                            header('Refresh: 5; URL=home.php');
+                            echo "Registrazione effettuata con successo!<br>sarai ridirezionato alla home tra 3 secondi.";
+                            header('Refresh: 3; URL=home.php');
 
                         } else {
                             echo "Non è stato possibile effettuare la registrazione per il seguente motivo: " . $conn->error;
@@ -172,17 +164,13 @@
             ?>
         </p>
     </div>
-    <?php 
-        error_reporting(E_ALL ^ E_WARNING); // metodo globale ^ significa tranne e funziona da qui in poi
-		include('footer.php');
-		// @include('footerrr.php');  // con @ evito la generazione di warnings o errors da parte della funzione
-	?>
-
+<!--   
 <footer class="piedatore">
 	<?php 
 		include('footer.php')
 	?>
 </footer>
+-->
 </body>
 
 </html>

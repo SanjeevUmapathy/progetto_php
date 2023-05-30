@@ -43,11 +43,12 @@
 		<div class="registrazione">
 			<h3>non ti sei registrato?</h3>
 			<p>registrati cliccando su questo tasto:</p>
-			<table>
-			<div><img class="foto_utente" src="../immagini/foto_utente.jpg"></div>
-			<div class="tasto_registrazione"><button><a  href="registrazione.php">Registrazione</a></button></div>
-			</table>
-			
+			<div>
+				<table class="tb_registrazione">
+					<tr><img class="foto_utente" src="../immagini/foto_utente.jpg" href="www.youtube.com"></tr>
+					<tr><button class="tasto_registrazione"><a href="registrazione.php">Registrazione</a></button></tr>
+				</table>
+			</div>
 		</div>
 
 		<div class="compilazione_login">
@@ -65,13 +66,12 @@
 							<td class="virginia">Password:</td>
 						</tr>
 						<tr>
-							<td class="virginia"><input type="password" name="password" placeholder="inserisci la password...." value="<?php /*echo $password; */?>" required></td>
+							<td class="virginia"><input type="password" name="password" placeholder="inserisci la password...." value="<?php echo $password?>" required></td>
 						</tr>
 						<tr>
 							<td class="distaso">
-
-									Utente <input type="radio" name="tipologia" value="cliente" checked>
-									Addetto <input type="radio" name="tipologia" value="Addetto" checked>
+									utente <input type="radio" name="tipologia" value="utente" checked>
+									addetto <input type="radio" name="tipologia" value="addetto">
 							</td>
 						</tr>
 					</table>
@@ -136,6 +136,7 @@
 
 		?>	
 	
+<!-- -->
 <footer class="piedatore">
 	<?php 
 		include('footer.php')

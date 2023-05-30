@@ -34,6 +34,6 @@
         </div>
     </header>
     <main>
-        <p>FAI CAGARE cliente</p>
+        <p></p>
     </main>
 </body>
