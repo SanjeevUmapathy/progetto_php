@@ -41,11 +41,11 @@
 	<div class="container-testo">
 
 		<div class="registrazione">
-			<h3>non ti sei registrato?</h3>
-			<p>registrati cliccando su questo tasto:</p>
-			<div>
-				<table class="tb_registrazione">
-					<tr><img class="foto_utente" src="../immagini/foto_utente.jpg" href="www.youtube.com"></tr>
+			<div><h2>non ti sei registrato?</h2></div>
+			<div class="frase_registra" ><h2>registrati cliccando su questo tasto:</h2></div>
+			<div class="tb_registrazione">
+				<table>
+					<tr><img class="foto_utente" src="../immagini/foto_utente.png"></tr>
 					<tr><button class="tasto_registrazione"><a href="registrazione.php">Registrazione</a></button></tr>
 				</table>
 			</div>
@@ -54,7 +54,8 @@
 		<div class="compilazione_login">
 			<form  action = "<?php $_SERVER['PHP_SELF'] ?>" method="post">
 				<div class="etabella">
-					<table >
+					<table>
+						
 						<tr class="titolologin"><h2 class="pagina_login">Pagina di Login</h2></tr>
 						<tr>
 							<td class="virginia"> Username:</td>
@@ -127,7 +128,7 @@
 
 					$_SESSION["username"] = $username;
 					$_SESSION["tipologia"] = $tipologia ;
-											
+					
 					$conn->close();
 					header("location: home.php");
 				}

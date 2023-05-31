@@ -19,6 +19,7 @@
                 <ul>
                     <li><a href="../homedex.php">Homepage</a></li>
                     <li><a href="contatti.php">Contacts</a></li>
+                    <li><a href="logout.php">Logout</a></li>
                 </ul>
             </nav>
         </div>
@@ -34,6 +35,6 @@
         </div>
     </header>
     <main>
-        <p></p>
+        <div>
     </main>
 </body>

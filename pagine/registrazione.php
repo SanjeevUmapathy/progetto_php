@@ -1,4 +1,5 @@
-<?php 
+<?php
+
     require("../data/dati_connessione_db.php");
     if(isset($_POST["username"])) 
     $username = $_POST["username"];  else $username = "";
@@ -70,29 +71,29 @@
 						<td class="virginia">Password: <input class="input" type="password" name="password" placeholder="inserisci la password...." value="<?php echo $password; ?>" required></td>
 					</tr>
 					<tr>
-						<td class="virginia">Conferma pwd: <input class="input" type="password" name="password" placeholder="Conferma password...." value="<?php echo $conferma; ?>" required></td>
+						<td class="virginia">Conferma pwd: <input class="input" type="password" name="conferma" placeholder="Conferma password...." value="<?php echo $conferma; ?>" required></td>
 					</tr>
 					<tr>
-						<td class="virginia">Nome: <input class="input" type="text" name="password" placeholder="inserisci il nome...." value="<?php echo $nome; ?>" ></td>
+						<td class="virginia">Nome: <input class="input" type="text" name="nome" placeholder="inserisci il nome...." value="<?php echo $nome; ?>" ></td>
 					</tr>
 					<tr>
-						<td class="virginia">Cognome: <input class="input" type="text" name="password" placeholder="inserisci il cognome...." value="<?php echo $cognome; ?>" ></td>
+						<td class="virginia">Cognome: <input class="input" type="text" name="cognome" placeholder="inserisci il cognome...." value="<?php echo $cognome; ?>" ></td>
 					</tr>
 					<tr>
-						<td class="virginia">Email: <input class="input" type="text" name="password" placeholder="inserisci l'email...." value="<?php echo $email; ?>" ></td>
+						<td class="virginia">Email: <input class="input" type="text" name="email" placeholder="inserisci l'email...." value="<?php echo $email; ?>" ></td>
 					</tr>
 					<tr>
-						<td class="virginia">Contatto telephonico: <input class="input" type="text" name="password" placeholder="inserici il numero di telefono...." value="<?php echo $telefono; ?>" ></td>
+						<td class="virginia">Contatto telephonico: <input class="input" type="text" name="telefono" placeholder="inserici il numero di telefono...." value="<?php echo $telefono; ?>" ></td>
 					</tr>
 					<tr>
-						<td class="virginia">Comune di residenza: <input class="input" type="text" name="password" placeholder="inserisci il comune...." value="<?php echo $comune; ?>" ></td>
+						<td class="virginia">Comune di residenza: <input class="input" type="text" name="comune" placeholder="inserisci il comune...." value="<?php echo $comune; ?>" ></td>
 					</tr>
 					<tr>
-						<td class="virginia">Indirizzo: <input class="input" type="text" name="text" placeholder="inserisci l'indirizzo di residenza...." value="<?php echo $indirizzo; ?>" ></td>
+						<td class="virginia">Indirizzo: <input class="input" type="text" name="indirizzo" placeholder="inserisci l'indirizzo di residenza...." value="<?php echo $indirizzo; ?>" ></td>
 					</tr>
 					<tr>
 						<td text-align="center" class="distaso">
-								Utente <input type="radio" name="tipologia" value="utenti" checked>
+								Utente <input type="radio" name="tipologia" value="utente" checked>
 								Addetto <input type="radio" name="tipologia" value="Addetto">
 
 					</td>
@@ -133,7 +134,7 @@
                     }
 
                     $myquery = "SELECT username 
-						    FROM utenti 
+						    FROM utente
 						    WHERE username='$username'";
                     //echo $myquery;
 
