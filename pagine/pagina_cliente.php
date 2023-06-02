@@ -34,7 +34,14 @@
             </nav>
         </div>
     </header>
-    <main>
-        <div>
-    </main>
+
+    <div class="titolologin">
+    	<h1 class="travelfy_login">Travelfy Online - Login</h1>
+    </div>
+
+    <footer class="piedatore">
+	<?php 
+		include('footer.php')
+	?>
+</footer>
 </body>

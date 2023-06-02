@@ -137,7 +137,7 @@
 
 		?>	
 	
-<!-- -->
+
 <footer class="piedatore">
 	<?php 
 		include('footer.php')

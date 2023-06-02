@@ -28,14 +28,11 @@
                 </ul>
             </nav>
         </div>
-        <div class="firstnav">
-            <nav>
-                <ul>
-                  
-                </ul>
-            </nav>
-        </div>
     </header>
+
+    <div class="titolologin">
+    	<h1 class="travelfy_login">Travelfy Online - I tuoi dati</h1>
+    </div>
 
     <main>
         <div class="titolo"><h1 align="center">Pagina personale con i tuoi dati</h1></div>
@@ -49,29 +46,50 @@
         <div class="gestione_dati">
             <div class="dati_pagina">
                 <a href="ristoranti.php">ristoranti</a>
-                <p>
+                <div>
                     clicca il link riportato sopra per essere indirizzato alla pagina dei ristoranti
-                </p>
+                </div>
+                <div class="immagine_div">
+                    <img src="../immagini/restaurant1.jpg" height=300px width=300px>
+                </div>
             </div>
             <div class="dati_pagina">
                 <a href="attivita.php">attività</a>
-                <p>
+                <div>
                     clicca il link riportato sopra per essere indirizzato alla pagina delle attività
-                </p>
+                </div>
+                <div class="immagine_div">
+                <img src="../immagini/activity2.jpg" height=300px width=300px>
+                </div>
             </div>
+        </div>
+
+        <div class="gestione_dati">
             <div class="dati_pagina">
                 <a href="dati_personali.php">i miei dati personali</a>
-                <p>
+                <div>
                     clicca il link riportato sopra per essere indirizzato alla pagina dei dati personali
-                </p>
+                </div>
+                <div class="immagine_div">
+                <img src="../immagini/papeete.jpg" height=300px width=300px>
+                </div>
             </div>
             <div class="dati_pagina">
                 <a href="prenotazioni.php">prenotazioni</a>
-                <p>
+                <div>
                     clicca il link riportato sopra per essere indirizzato alla pagina delle prenotazioni
-                </p>
+                </div>
+                <div class="immagine_div">
+                <img src="../immagini/madeira.jpg" height=300px width=300px>
+                </div>
             </div>
         </div>
         
     </main>
+
+    <footer class="piedatore">
+	<?php 
+		include('footer.php')
+	?>
+</footer>
 </body>

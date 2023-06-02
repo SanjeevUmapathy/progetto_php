@@ -132,14 +132,13 @@ div.p2{width: 50%;}
 ------------------------------------------------------------*/
 .titolo{padding: 20px;}
 .riga{justify-content: space-between; padding-top: 20px;}
-.benvenuto{border: solid #112f64 3px; margin: auto; display: inline-block; justify-content: center; border-radius: 10px; background-color: #8db2f2;}
+.benvenuto{border: solid #112f64 3px; margin: auto; justify-content: center; border-radius: 10px; background-color: #8db2f2;}
 .benvenuto h2{text-align: center; padding: 20px; }
-.gestione_dati{display: flex; justify-content: space-around;padding-top: 50px;}
+.gestione_dati{display: flex; justify-content: space-around;padding-top: 20px; padding-bottom: 20px;}
 .gestione_dati div a{font-size: 30px}
-.gestione_dati div{font-size: 20px; border: 3px solid black; padding: 30px; margin: auto; border-radius: 15px;
+.gestione_dati{font-size: 20px; padding: 10px; border-radius: 15px;}
+.dati_pagina{border: 1px solid black; padding: 10px; border-radius: 15px; background-color: #d9d6d6 ;}
 
-
-}
 /*--------------------------------------------------------------
 # Media
 --------------------------------------------------------------*/
